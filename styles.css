@@ -1,0 +1,131 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply general styling to the body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the container for the forms */
+#signupFormContainer,
+#loginFormContainer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Style the heading */
+h1 {
+  color: #4CAF50; /* Green color for sci-fi touch */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Style the forms and their labels */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Style the buttons */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green color for submit button */
+  color: #fff;
+}
+
+button[type="button"] {
+  background-color: #777;  /*Gray color for cancel button*/
+  color: #fff;
+}
+
+/* Add some spacing for readability */
+br {
+  margin: 10px 0;
+}
+
+/* Style the "Already have an account?" link */
+p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+p a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #4CAF50; /* Green color for the link */
+}
+
+p a:hover {
+  color: #6EFF6E; /* Lighter green color on hover */
+}
+
+/* Style the "Back to Sign Up" button */
+button[type="button"]#backToSignup {
+  background-color: #4CAF50; /* Green color for the button */
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens here */
+  #signupFormContainer,
+  #loginFormContainer {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
